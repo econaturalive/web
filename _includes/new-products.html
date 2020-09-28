@@ -12,7 +12,7 @@
           <div class="text-center item mb-4">
             {% assign product = site.products | where:"code", 1  | first %}
             <a href="{{ product.url | relative_url }}">
-              <img src="/images/products/{{ product.image }}" alt="Image">
+              <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
             <h3 class="text-dark">
               <a href="{{ product.url | relative_url }}">
@@ -25,7 +25,7 @@
           <div class="text-center item mb-4">
             {% assign product = site.products | where:"code", 2  | first %}
             <a href="{{ product.url | relative_url }}">
-              <img src="/images/products/{{ product.image }}" alt="Image">
+              <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
             <h3 class="text-dark">
               <a href="{{ product.url | relative_url }}">
@@ -38,7 +38,7 @@
           <div class="text-center item mb-4">
             {% assign product = site.products | where:"code", 1  | first %}
             <a href="{{ product.url | relative_url }}">
-              <img src="/images/products/{{ product.image }}" alt="Image">
+              <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
             <h3 class="text-dark">
               <a href="{{ product.url | relative_url }}">
@@ -51,7 +51,7 @@
           <div class="text-center item mb-4">
             {% assign product = site.products | where:"code", 2  | first %}
             <a href="{{ product.url | relative_url }}">
-              <img src="/images/products/{{ product.image }}" alt="Image">
+              <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
             <h3 class="text-dark">
               <a href="{{ product.url | relative_url }}">

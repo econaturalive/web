@@ -38,7 +38,7 @@ title: Store - ECONATURALIVE
         <div class="col-sm-6 col-lg-4 text-center item mb-4">
           <span class="tag">Sale</span>
           <a href="{{ product.url | relative_url }}">
-            <img src="/images/products/{{ product.image }}" alt="Image">
+            <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
           </a>
           <h3 class="text-dark">
             <a href="{{ product.url | relative_url }}">
