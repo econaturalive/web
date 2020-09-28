@@ -34,7 +34,7 @@
         <p class="price"><del>95.00</del> &mdash; $55.00</p>
       </div>
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
-        {% assign product = site.products | where:"code", 1  | first %}
+        {% assign product = site.products | where:"code", 3  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
         <a href="{{ product.url | relative_url }}">
           <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
@@ -47,7 +47,7 @@
         <p class="price"><del>95.00</del> &mdash; $55.00</p>
       </div>
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
-        {% assign product = site.products | where:"code", 2  | first %}
+        {% assign product = site.products | where:"code", 4  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
         <a href="{{ product.url | relative_url }}">
           <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
@@ -60,7 +60,7 @@
         <p class="price"><del>95.00</del> &mdash; $55.00</p>
       </div>
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
-        {% assign product = site.products | where:"code", 1  | first %}
+        {% assign product = site.products | where:"code", 5  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
         <a href="{{ product.url | relative_url }}">
           <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
@@ -73,7 +73,7 @@
         <p class="price"><del>95.00</del> &mdash; $55.00</p>
       </div>
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
-        {% assign product = site.products | where:"code", 2  | first %}
+        {% assign product = site.products | where:"code", 6  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
         <a href="{{ product.url | relative_url }}">
           <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
