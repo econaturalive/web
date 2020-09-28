@@ -36,7 +36,7 @@ title: Store - ECONATURALIVE
     <div class="row">
       {% for product in site.products %}
         <div class="col-sm-6 col-lg-4 text-center item mb-4">
-          <span class="tag">Sale</span>
+          {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
           <a href="{{ product.url | relative_url }}">
             <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
           </a>
