@@ -4,8 +4,8 @@ layout: default
 <div class="bg-light py-3">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 mb-0"><a href="/">Home</a> <span class="mx-2 mb-0">/</span> <a
-          href="/shop.html">Store</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">{{ page.title }}</strong></div>
+      <div class="col-md-12 mb-0"><a href="{{ '/' | relative_url }}">Home</a> <span class="mx-2 mb-0">/</span> <a
+          href="{{ 'shop.html' | relative_url }}">Store</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">{{ page.title }}</strong></div>
     </div>
   </div>
 </div>
@@ -37,7 +37,7 @@ layout: default
           </div>
         </div>-->
 
-        <p><a href="/contact.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Bestellen</a></p>
+        <p><a href="{{ 'contact.html' | relative_url }}" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Bestellen</a></p>
 
         <!--<div class="mt-5">
           <ul class="nav nav-pills mb-3 custom-pill" id="pills-tab" role="tablist">
