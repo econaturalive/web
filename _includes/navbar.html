@@ -1,0 +1,72 @@
+<div class="site-navbar py-2">
+  <div class="search-wrap">
+    <div class="container">
+      <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+      <form action="#" method="post">
+        <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <div class="site-logo">
+          <a href="/" class="js-logo-clone">ECONATURALIVE</a>
+        </div>
+      </div>
+      <div class="main-nav d-none d-lg-block">
+        <nav class="site-navigation text-right text-md-center" role="navigation">
+          <ul class="site-menu js-clone-nav d-none d-lg-block">
+            <li class="{% if page.url == '/' %}active{% endif %}">
+              <a href="/">Home</a>
+            </li>
+            <li  class="{% if page.url == '/shop.html' %}active{% endif %}">
+              <a href="/shop.html">Store</a>
+            </li>
+            <li class="has-children">
+              <a href="#">Produkte</a>
+              <ul class="dropdown">
+                <li class="has-children">
+                  <a href="#">Vitamine</a>
+                  <ul class="dropdown">
+                    <li><a href="#">D3 / K2</a></li>
+                    <li><a href="#">D3</a></li>
+                    <li><a href="#">K2</a></li>
+                    <li><a href="#">Vitamin B</a></li>
+                    <li><a href="#">Vitamin C</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Omega 3</a></li>
+                <li><a href="#">Magnesium</a></li>
+                <li><a href="#">OPC</a></li>
+                <li class="has-children">
+                  <a href="#">Weitere Produkte</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Koralle</a></li>
+                    <li><a href="#">...</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="{% if page.url == '/about.html' %}active{% endif %}">
+              <a href="/about.html">Über uns</a>
+            </li>
+            <li class="{% if page.url == '/contact.html' %}active{% endif %}">
+              <a href="/contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="icons">
+        <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+        <!--<a href="cart.html" class="icons-btn d-inline-block bag">
+          <span class="icon-shopping-bag"></span>
+          <span class="number">2</span>
+        </a>-->
+        <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+            class="icon-menu"></span></a>
+      </div>
+    </div>
+  </div>
+</div>
