@@ -10,11 +10,11 @@
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
         {% assign product = site.products | where:"code", 1  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
-        <a href="{{ product.url }}">
-          <img src="/images/products/{{ product.image }}" alt="Image">
+        <a href="{{ product.url | relative_url }}">
+          <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
         </a>
         <h3 class="text-dark">
-          <a href="{{ product.url }}">
+          <a href="{{ product.url | relative_url }}">
             {{ product.title }}
           </a>
         </h3>
@@ -23,11 +23,11 @@
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
         {% assign product = site.products | where:"code", 2  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
-        <a href="{{ product.url }}">
-          <img src="/images/products/{{ product.image }}" alt="Image">
+        <a href="{{ product.url | relative_url }}">
+          <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
         </a>
         <h3 class="text-dark">
-          <a href="{{ product.url }}">
+          <a href="{{ product.url | relative_url }}">
             {{ product.title }}
           </a>
         </h3>
@@ -36,11 +36,11 @@
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
         {% assign product = site.products | where:"code", 1  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
-        <a href="{{ product.url }}">
-          <img src="/images/products/{{ product.image }}" alt="Image">
+        <a href="{{ product.url | relative_url }}">
+          <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
         </a>
         <h3 class="text-dark">
-          <a href="{{ product.url }}">
+          <a href="{{ product.url | relative_url }}">
             {{ product.title }}
           </a>
         </h3>
@@ -49,11 +49,11 @@
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
         {% assign product = site.products | where:"code", 2  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
-        <a href="{{ product.url }}">
-          <img src="/images/products/{{ product.image }}" alt="Image">
+        <a href="{{ product.url | relative_url }}">
+          <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
         </a>
         <h3 class="text-dark">
-          <a href="{{ product.url }}">
+          <a href="{{ product.url | relative_url }}">
             {{ product.title }}
           </a>
         </h3>
@@ -62,11 +62,11 @@
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
         {% assign product = site.products | where:"code", 1  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
-        <a href="{{ product.url }}">
-          <img src="/images/products/{{ product.image }}" alt="Image">
+        <a href="{{ product.url | relative_url }}">
+          <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
         </a>
         <h3 class="text-dark">
-          <a href="{{ product.url }}">
+          <a href="{{ product.url | relative_url }}">
             {{ product.title }}
           </a>
         </h3>
@@ -75,11 +75,11 @@
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
         {% assign product = site.products | where:"code", 2  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
-        <a href="{{ product.url }}">
-          <img src="/images/products/{{ product.image }}" alt="Image">
+        <a href="{{ product.url | relative_url }}">
+          <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
         </a>
         <h3 class="text-dark">
-          <a href="{{ product.url }}">
+          <a href="{{ product.url | relative_url }}">
             {{ product.title }}
           </a>
         </h3>
@@ -88,7 +88,7 @@
     </div>
     <div class="row mt-5">
       <div class="col-12 text-center">
-        <a href="shop.html" class="btn btn-primary px-4 py-3">Alle Produkte anzeigen</a>
+        <a href="/shop.html" class="btn btn-primary px-4 py-3">Alle Produkte anzeigen</a>
       </div>
     </div>
   </div>
