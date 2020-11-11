@@ -10,7 +10,7 @@
         <div class="nonloop-block-3 owl-carousel">
 
           <div class="text-center item mb-4">
-            {% assign product = site.products | where:"code", 8  | first %}
+            {% assign product = site.products | where:"code", 732  | first %}
             <a href="{{ product.url | relative_url }}">
               <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
@@ -19,11 +19,11 @@
                 {{ product.title }}
               </a>
             </h3>
-            <p class="price">$120.00</p>
+            <p class="price">{{ product.price }}</p>
           </div>
 
           <div class="text-center item mb-4">
-            {% assign product = site.products | where:"code", 7  | first %}
+            {% assign product = site.products | where:"code", 714  | first %}
             <a href="{{ product.url | relative_url }}">
               <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
@@ -32,11 +32,11 @@
                 {{ product.title }}
               </a>
             </h3>
-            <p class="price">$120.00</p>
+            <p class="price">{{ product.price }}</p>
           </div>
 
           <div class="text-center item mb-4">
-            {% assign product = site.products | where:"code", 6  | first %}
+            {% assign product = site.products | where:"code", 705  | first %}
             <a href="{{ product.url | relative_url }}">
               <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
@@ -45,11 +45,11 @@
                 {{ product.title }}
               </a>
             </h3>
-            <p class="price">$120.00</p>
+            <p class="price">{{ product.price }}</p>
           </div>
 
           <div class="text-center item mb-4">
-            {% assign product = site.products | where:"code", 5  | first %}
+            {% assign product = site.products | where:"code", 698  | first %}
             <a href="{{ product.url | relative_url }}">
               <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
@@ -58,7 +58,7 @@
                 {{ product.title }}
               </a>
             </h3>
-            <p class="price">$120.00</p>
+            <p class="price">{{ product.price }}</p>
           </div>
         </div>
       </div>
