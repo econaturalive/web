@@ -1,14 +1,23 @@
+---
+title: Web
+timezone: UTC
 collections:
-    products:
-        output: true
-
+  posts:
+    title: Posts
+    output: true
+  products:
+    title: Products
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-    - scope:
-        path: ""
-        type: "products"
-      values:
-        layout: "product"
-    - scope:
-        path: ""
-      values:
-        layout: "default"
+- scope:
+    path: ''
+    type: products
+  values:
+    layout: product
+- scope:
+    path: ''
+  values:
+    layout: default
