@@ -8,7 +8,7 @@
 
     <div class="row">
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
-        {% assign product = site.products | where:"code", 682  | first %}
+        {% assign product = site.products | where:"code", "NV10124"  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
         <a href="{{ product.url | relative_url }}">
           <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image" width="250">
@@ -78,7 +78,7 @@
         <p class="price">{{ product.price }}</p>
       </div>
       <div class="col-sm-6 col-lg-4 text-center item mb-4">
-        {% assign product = site.products | where:"code", 732  | first %}
+        {% assign product = site.products | where:"code", "NV10473"  | first %}
         {% if product.sale %}<span class="tag">Angebot</span>{% endif %}
         <a href="{{ product.url | relative_url }}">
           <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image" width="250">
