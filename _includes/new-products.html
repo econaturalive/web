@@ -36,7 +36,7 @@
           </div>
 
           <div class="text-center item mb-4">
-            {% assign product = site.products | where:"code", 705  | first %}
+            {% assign product = site.products | where:"code", "NV10240"  | first %}
             <a href="{{ product.url | relative_url }}">
               <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
@@ -49,7 +49,7 @@
           </div>
 
           <div class="text-center item mb-4">
-            {% assign product = site.products | where:"code", 698  | first %}
+            {% assign product = site.products | where:"code", "NV10374"  | first %}
             <a href="{{ product.url | relative_url }}">
               <img src="{{ '/images/products/' | relative_url }}{{ product.image }}" alt="Image">
             </a>
