@@ -8,6 +8,6 @@
 # Deploy
 - Push auf Master, GitHub macht den Rest (GitHub Pages)
 
-# DoKumentation
+# Dokumentation
 - Originales Template: Pharma (siehe pharma.zip)
 - Produkte anlegen/löschen: Werden im Ordner "_products" verwaltet
